@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/bf772effd7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/x-icon" href="img/GW.jpg">
+  <title> Nur-Sultan </title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .responsive {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+  </style>
+</head>
+
+<body style="background-color: #EAE7C6">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: #BCCC9A">Gastro Wiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Wa.me/787072878181"><i class="fa-brands fa-whatsapp"></i></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://instagram.com/hd_l89733b?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+          <a href="reviews.html" class="nav-item nav-link">Reviews</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              City
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="almaty.html">Almaty</a></li>
+              <li><a style="cursor: pointer" class="dropdown-item" href="shymkent.html">Shymkent</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button  class="btn btn-outline-success" type="submit">Search</button>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <hr>
+  <div class="gcontainer">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" onclick="scroll()">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/shatyr.jpg" class="d-block w-100" alt="...">
+          <div class="centered">
+            <div class="col-md-12">
+              <center>
+                <h1 class="m-b-20"><strong>Welcome To <br> Gastro-Wiki</strong></h1>
+                <p class="m-b-40">Best restaurants and cafes in the capital city. <br>
+                  We offer, you choose!</p>
+                <center>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider.jpg" class="d-block w-100" alt="...">
+          <div class="centered">
+            <div class="col-md-12">
+              <center>
+                <h1 class="m-b-20"><strong>Welcome To <br> Gastro-Wiki</strong></h1>
+                <p class="m-b-40">Best restaurants and cafes in the capital city. <br>
+                  We offer, you choose!</p>
+              </center>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/exxpo.jpg" class="d-block w-100" alt="...">
+          <div class="centered">
+            <div class="col-md-12">
+              <center>
+                <h1 class="m-b-20"><strong>Welcome To <br> Gastro-Wiki</strong></h1>
+                <p class="m-b-40">Best restaurants and cafes in the capital city. <br>
+                  We offer, you choose!</p>
+              </center>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Start About -->
+  <div class="about-section-box">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 ani_button">
+
+          <img id="ic" src="img/astana.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <div class="inner-column">
+            <br>
+            <h1>About <span>Nur-Sultan</span></h1>
+            <p>Nur-Sultan is the capital of Kazakhstan and the newest, most modern and fashionable city in the country. People come here to look at unusual architectural forms. The city is located on the Ishim River, which divides it into the right
+              and left banks. The left bank is more beautiful - it is here that all the unusual buildings are located.It is full of magnificent attractions, educational institutions, hotels, office buildings and other commercial structures. It boasts
+              well-developed transport infrastructure and rather favourable environment.</p>
+            <button id="mymusic" class="button button1">Reservation</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+  <!-- Start QT -->
+  <div class="qt-box qt-background">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-left">
+          <p class="lead ">
+            " Happiness: a good bank account, a good cook, and a good digestion. "
+          </p>
+          <span class="lead">Jean-Jacques Rousseau</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End QT -->
+
+  <br>
+  <h2 class="display-5 text-center"> List of restaurants where you can: </h2>
+  <hr>
+  <div class="row mx-5">
+
+    <div class="col-lg-4 col-md-8 col-sm-16">
+      <div class="classic img">
+  <img src="img/janum.jpg" width="400px" height="300px"></div>
+      <h3>
+        Sing in karaoke:
+      </h3>
+      <ul class="list">
+        <li> Hot2be</li>
+        <li> Millionaire</li>
+        <li> Janym Soul</li>
+        <li> Ginza Karaoke</li>
+        <li> Jimmy Acha Acha</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-8 col-sm-16">
+      <div class="classic img">
+
+      <img src="img/dogy.jpg" width="400px" height="300px"></div>
+      <h3>
+        Take your pet with you:
+      </h3>
+      <ul class="list">
+        <li> Salad Bar</li>
+        <li> Cafe Keks</li>
+        <li> Cafe Tochka</li>
+        <li> Jasyl Coffee</li>
+        <li> Oneshott Coffee</li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-md-8 col-sm-16">
+      <div class="classic img">
+
+      <img src="img/vkysno.jpg" width="400px" height="300px"></div>
+      <h3>
+        Eat traditional kazakh food:
+      </h3>
+      <ul class="list">
+        <li> Navat</li>
+        <li> Arnau</li>
+        <li> Tezbesh</li>
+        <li> Vechnoe Nebo</li>
+        <li> Qazaq Gourmet</li>
+      </ul>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <hr>
+
+
+  <div class="row mx-5">
+    <div class="column">
+      <div class="col-sm-6 box">
+      <img src="img/girl.jpg" style="height:300px; width:450px;"class="responsive" width="600" height="400">   </div>
+
+      <center>
+        <h4>
+          Hot2be
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> European and Oriental. </p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i> on Thursdays a wine evening, on
+              Sundays 2+1 cocktails.</p>
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i> ave.Saryarka,1</p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i> 8 (702) 783 4883 </p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i> <a href="https://instagram.com/hot2be_nur?utm_medium=copy_link">
+                @hot2be_nur</a></p>
+          </li>
+        </ul>
+      </h5>
+  </div>
+    <div class="column">
+      <div class="col-lg-4">
+
+      <img src="img/m.jpg" style="height:300px; width:450px;"></div>
+      <center>
+        <h4>
+          Millionaire
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> European, Oriental and Pan-Asian.</p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>wine list, VIP halls.</p>
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i> st.Mangilik El,54/2</p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i> 8 (771) 555 5549 </p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i> <a href="https://www.instagram.com/millionaire.astana/">
+                @millionaire.astana</a></p>
+          </li>
+        </ul>
+
+      </h5>
+    </div>
+    <div class="column">
+      <div class="col-lg-4">
+
+      <img src="img/soul.jpg" style="height:300px; width:450px;"></div>
+      <center>
+        <h4>
+          Janym Soul
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> European.</p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>Karaoke Rooms with different
+              interier.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i> st.Mailina,37A</p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i> 8 (708) 707 1555 </p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong></i> <a href="https://www.instagram.com/janymsoul.ns/"> @janymsoul.ns</a>
+            </p>
+          </li>
+        </ul>
+
+      </h5>
+    </div>
+  </div>
+  <div class="row mx-5">
+    <div class="column">
+      <img src="img/ka.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Ginza Karaoke
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i>European and Oriental.</p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>master classes, VIP halls.
+          </li>
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Turan,15</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (777) 439 1212 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/ginza_karaoke/?hl=ru">
+                @ginza_karaoke</a></p>
+          </li>
+        </ul>
+        <ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/acha.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Jimmy Acha Acha
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><strong>Cuisine:</strong> <a>European and Asian.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>unique Indian atmosphere.
+          </li>
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Seifullina,38</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (701) 522 2238 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/hungryrabbit.ns/">
+                @hungryrabbit.ns</a></p>
+          </li>
+
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/bar.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Salad Bar
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> <a>European.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>make a bowl to your taste by
+              mixing ingredients.
+          </li>
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Sauran,42</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (775) 106 3388 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/saladbar.kaz/"> @saladbar.kaz</a>
+            </p>
+          </li>
+
+        </ul>
+      </h5>
+    </div>
+  </div>
+  <div class="row mx-5">
+    <div class="column">
+      <img src="img/three.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Cafe Keks
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong></i> <a>Mixed.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>dishes for pets.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Sauran,34</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (778) 888 6618 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/keksbakery.kz/"> @keksbakery.kz</a>
+            </p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/tochka.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Cafe Tochka
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong></i> <a>European.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>meals for pets.
+          </li>
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Beibitshilik,5</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (775) 852 8302 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/cafe.tochka/"> @cafe.tocka</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/kok.jpg"style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Jasyl Coffee
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong></i> Japanese.</p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>matcha desserts, wanpaku
+              sandwiches.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Kunaeva,14</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (775) 307 0801 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/jasylcoffee/"> @jasylcoffee</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+  </div>
+  <div class="row mx-5">
+    <div class="column">
+      <img src="img/one.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Oneshott Coffee
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> <a>European.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>Croissants, paninis, donuts.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Bekturova,3</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (701) 733 6663 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/oneshott_coffee/">
+                @oneshott_coffee</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/ga.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Navat
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> <a>European and Oriental .</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>beautiful view from window.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Kabanbai Batyr,21</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (771) 931 1111 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/navat_nursultan/">
+                @navat_nursultan</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/sofa.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Arnau
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong></i> <a>Kazakh.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>live music with the sound of
+              Kazakh national instruments.
+          </li>
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Turan,30</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (701) 100 0704</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/satgrouprest/"> @satgrouprest</a>
+            </p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+  </div>
+  <div class="row mx-5">
+    <div class="column">
+      <img src="img/tez.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Tezbesh
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong></i> <a>Pan-Asian and Kazakh.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i> beshbarmak made from smoked
+              horse meat.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Respublica,5</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (747) 527 9922 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/tezbesh/"> @tezbesh</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/vechnoe.jpg"style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Vechnoe Nebo
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> <a>European, Oriental and
+                Pan-Asian.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>western wines.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Dostyk,18</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (705) 504 2265 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/vechnoe.nebo.astana/">
+                @vechnoe.nebo.astana</a></p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="column">
+      <img src="img/borsh.jpg" style="height:300px; width:450px;">
+      <center>
+        <h4>
+          Qazaq Gourmet
+        </h4>
+      </center>
+      <h5>
+        <ul>
+          <li>
+            <p><i> <strong>Cuisine:</strong> </i> <a>Kazakh.</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Special offers:</strong> </i>atmosphere of nomadic culture.
+          </li>
+
+          <li>
+            <p><i> <strong>Address:</strong> </i><a>st.Mangilik El,29</a></p>
+          </li>
+          <li>
+            <p><i> <strong>Contacts:</strong> </i><a> 8 (708) 988 8888 </a></p>
+          </li>
+          <li>
+            <p><i> <strong>Instagram:</strong> </i><a href="https://www.instagram.com/qazaq.gourmet/"> @qazaq.gourmet</a>
+            </p>
+          </li>
+        </ul>
+      </h5>
+    </div>
+  </div>
+  <br><br>
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+      </section>
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+<div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button id="myBtn" type="submit" onclick="document.getElementById('sound').play();" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          We select the main events of the week, and then tell you about them in our newsletter, do
+          not miss the news about promotions and discounts!
+        </p>
+        <p>To play music, push the button "Reservation"</p>
+      </section>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

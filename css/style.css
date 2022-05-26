@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
+@import url('https://fonts.googleapis.com/css?family=Athiti:400,500,600');
+* {
+  box-sizing: border-box;
+}
+.fotter{
+  background-color: #333;
+}
+.card {
+  display: inline-block;
+  background-color: inherit;
+  width: 350px;
+  margin: 20px;
+}
+h5 {
+  font-weight: bold;
+  font-style: italic;
+}
+h3{
+  font-family:'Athiti';
+
+}
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.ani_button{
+  width: 130%;
+}
+.ani_button:hover {
+  animation: bounce 1.2s;
+}
+
+.qt-background{
+	background: url(https://media.gray.com/wp-content/uploads/2020/04/02070702/iStock-1133157200_NEW-WEB.jpg) no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+}
+.qt-background p {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 44px;
+    color: #fff;
+	font-family: 'Arbutus Slab', serif;
+	margin-bottom: 20px;
+}
+
+.qt-background span {
+    color: #fff;
+    font-size: 20px;
+	font-weight: 500;
+}
+
+.about-section-box{
+	padding: 70px 0px;
+}
+
+.inner-column{}
+.inner-column h1{
+	font-family: 'Arbutus Slab', serif;
+	font-size: 30px;
+	color: #010101;
+}
+.inner-column h1 span{
+	color: #d0a772;
+}
+.inner-column h4{
+	font-size: 16px;
+	font-weight: 500;
+}
+.inner-column p{
+	font-size: 18px;
+}
+
+.button1 {
+  background-color: #EAE7C6;
+  color: black;
+  border: 2px solid;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color:#E3CAA5 ;
+  color: #EAE7C6;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+
+}
+.gcontainer img {
+  -webkit-filter: blur(4px); /* Safari 6.0 - 9.0 */
+  filter: blur(4px);
+
+}
+.classic img {
+  border-radius: 50%;
+}
